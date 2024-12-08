@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* theme */
+:root{
+    --main-color : #2fbce7;
+    --btn-color : #0c6580;
+    --logo-color : #0bd185;
+    --border-color: #0a0909c7;
+    --color-: #ffffffef;
+}
+
+
+/* Layout */
+.container{
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 1.6rem 2.4rem;
+}
+
+
+/* Navbar section */
+.section-navbar{
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.4rem;
+
+    & h2 {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.section-navbar .content input, 
+.section-navbar .content button{
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+.section-navbar #search_btn{
+    margin-left: 1rem;
+    cursor: pointer; 
+}
+
+
+
+
+
+/* Blog */
+main{   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    width: 28rem;
+    height: auto;
+    border: 0.1rem solid var(--main-color);
+    padding: 1rem;
+    margin: 0 2rem 2rem 0;
+    cursor: pointer;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+    & img{
+        width: 100%;
+        border-radius: 0.6rem;
+        -webkit-border-radius: 0.6rem;
+        -moz-border-radius: 0.6rem;
+        -ms-border-radius: 0.6rem;
+        -o-border-radius: 0.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    & h2{
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 0.4rem 0;
+        line-height: 2.3rem;
+    }
+
+    & p{
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+    }
+}
+
+
+
+@media (width <=669px) {
+    .blog-card{
+        width: 24rem;
+    }
+
+    .section-navbar .container h2 { 
+        font-size: 2.6rem;     
+    }
+
+    .section-navbar .content input, .section-navbar .content button {
+        font-size: 1.4rem;
+        padding: 0.6rem;    
+    }
+   
+}
+
+@media (width <=590px) {
+    .blog-card{
+        width: 100%;
+    }
+
+    .section-navbar #search_btn {
+        margin: 0.8rem 0rem;
+    }
+
+
+    .section-navbar .content input, .section-navbar .content button {
+        font-size: 1.2rem;
+        padding: 0.6rem;    
+    }
+}
